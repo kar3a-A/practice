@@ -5,11 +5,39 @@
     flex-wrap: wrap;
     height: 100vh;
   }
+  .containerHead {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    top: 0;
+    color: black;
+    background-color: rgba(127, 255, 249, 0.921);
+  }
+  .containerFooter {
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(22, 18, 33, 0.938);
+  }
   
   .cardContainer {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
     justify-content: center;
+    align-items: center;
+  }
+  .cardContainer :hover {
+    background-color: rgba(41, 200, 221, 0.753);
+  }
+  .cardContainer a {
+    text-decoration: none;
+    color: white;
   }
   
   .card {
@@ -22,6 +50,11 @@
     justify-content: center;
     border: 1px solid black;
     border-radius: 5px;
+  }
+
+
+  .hideCard {
+    display: none;
   }
   
   h2 {
